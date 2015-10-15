@@ -57,6 +57,13 @@ mixpanel.people.append("billybob", "awards", "Great Player");
 // append multiple values to a list
 mixpanel.people.append("billybob", {"awards": "Great Player", "levels_finished": "Level 4"});
 
+// merge value to a list (ignoring duplicates)
+mixpanel.people.union("billybob", {"browsers": "ie"});
+
+// merge multiple values to a list (ignoring duplicates)
+mixpanel.people.union("billybob", {"browsers": ["ie", "chrome"]});
+
+
 // record a transaction for revenue analytics
 mixpanel.people.track_charge("billybob", 39.99);
 
@@ -137,6 +144,8 @@ Contributions from:
  - [Zeevl](https://github.com/zeevl)
  - [Tobias Baunbæk](https://github.com/freeall)
  - [Eduardo Sorribas](https://github.com/sorribas)
+ - [Nick Chang](https://github.com/maeldur)
+ - [Michael G](https://github.com/gmichael225)
 
 License
 -------------------
